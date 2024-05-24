@@ -122,3 +122,10 @@ Sur TeraTerm (notre carte), on vérifie la présence du nouveau code et on le la
 
 # 2  Modules kernel
 
+Sur la VM:
+![alt text](image-11.png)
+
+Sur la carte:
+![alt text](image-10.png)
+
+
