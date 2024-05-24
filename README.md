@@ -64,6 +64,7 @@ Alors même que le fichier a été créé sur la VM:
 # 1.4.4 Accès au matériel
 
 ![alt text](image-7.png)
+
 Les commandes suivantes:
 Allument la led1,
 Eteignent la led1
