@@ -129,3 +129,6 @@ Sur la carte:
 ![alt text](image-10.png)
 
 
+Pose 2 problèmes:
+Pas de possibilité d'interuption.
+Pas de portabilité (l'adresse est marquée en dure. Doit rechanger le code en dur si l'adresse change. Exemple : sur un autre appareil l'adresse des GPIO peut etre differente)
