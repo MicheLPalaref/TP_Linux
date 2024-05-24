@@ -12,8 +12,9 @@ Installation d'ORACLE VM VirtualBox:
 /!\ Ne pas oublier de changer le chemin d'accès pour ne pas se retrouver dans les dossiers partages de M.BARES:
 ![alt text](image-1.png)
 
-Parametrer la connection ethernet:
+Parametrer la connection ethernet de la carte pour la lier a notre VM:
 
+On utilise TeraTerm lié en serial port pour visualier le Linux de notre carte.
 Au demarage de la carte, avec la commande "ls" on a :
 ![alt text](image-2.png)
 
