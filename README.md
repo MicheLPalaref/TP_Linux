@@ -112,3 +112,12 @@ int main (void)
     
 }
 ```
+
+Puis on charge le code dans notre VM et on l'envoi sur notre carte:
+![alt text](image-8.png)
+
+Sur TeraTerm (notre carte), on vérifie la présence du nouveau code et on le lance:
+![alt text](image-9.png)
+
+# 2  Modules kernel
+
