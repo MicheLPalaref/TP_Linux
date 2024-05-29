@@ -181,4 +181,13 @@ Installation BC:
 
 ![alt text](image-14.png)
 
+En installant le dossier téléchargé depuis Moodle, on obtient:
+
+![alt text](image-16.png)
+
+En appliquant la commande Make on obtient:
+
+![alt text](image-17.png)
+
+
 
