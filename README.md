@@ -124,6 +124,8 @@ Sur TeraTerm (notre carte), on vérifie la présence du nouveau code et on le la
 
 # 2  Modules kernel
 
+# 2.1 Accès aux registres
+
 Sur la VM:
 ![alt text](image-11.png)
 
@@ -137,3 +139,48 @@ Pose 2 problèmes:
 Pas de possibilité d'interruption.
 
 Pas de portabilité (l'adresse est marquée en dure. Doit rechanger le code en dur si l'adresse change. Exemple : sur un autre appareil l'adresse des GPIO peut etre differente)
+
+# 2.2 Compilation de module noyau sur la VM
+
+Installation linux-headers-amd64:
+
+![alt text](image-13.png)
+
+Installation BC:
+
+![alt text](image-14.png)
+
+On créé un chenillard en utilisant mmap:
+```C
+#include <stdio.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <stdint.h>
+#include <unistd.h>
+
+
+int main (void)
+{
+    uint32_t * p;
+    int i;
+    int fd = open("/dev/mem", O_RDWR);
+    p = (uint32_t*)mmap(NULL, 4, PROT_WRITE|PROT_READ, MAP_SHARED,fd, 0xFF203000);
+    //*p = (1<<9);//Allume la 8ieme led
+    //*p = 8; //Allume (1000) la 4ieme led
+    while(1)
+    {
+    for(i=1;i<10;i++)
+    {
+        *p=(1<<i);
+        usleep(100000);
+    }
+    }
+
+}
+```
+
+On met à jour le code sur la VM et on l'envoi sur le SOC:
+
+![alt text](image-15.png)
