@@ -250,26 +250,28 @@ make scripts
 
 # 2.3.3 Hello World
 
-On se place dans :
+
 ```C
-cd src/Moodle_TP2/
+cd src/Moodle_TP2/ //On se place dans le bon dossier
 
 vim Makefile
 vim hello.c
-ls
+
 make//ne fonctionne pas car dans un dossier partagé
 cd ..//On remonte d'un cran
-cp -r Moodle_TP2/ .. //on créé un nouveau dossier 
+cp -r Moodle_TP2/ .. //on copie tout le repertoire en dehors du dossier src. 
 cd ..
 cd Moodle_TP2/
-ls
-make
-ls
-scp hello.ko root@192.168.88.24://mise a jour du code hello.ko
-vim hello.c//version affichée toujours ancienne
-cp ../src/Moodle_TP2/hello.c .//on recopie
-vim hello.c//version modifée
 
+make
+
+scp hello.ko root@192.168.88.24://mise a jour du code hello.ko
+vim hello.c//affiche version du code ancienne
+cp ../src/Moodle_TP2/hello.c .//on recopie correctement
+vim hello.c//affiche version du code modifié
 
 ```
+
+# 3 Device tree (TP3)
+
 
