@@ -239,6 +239,7 @@ mv config .config
 //Si on utilise la commande "ls" on ne trouve pas le fichier puisque les .config n'apparaissent pas. On peut en revanche s'assurer de sa présence avec la commande "ls -a"
 
 //On créé des variables d'environnement qui sont propres a notre VM qui se perdent à chaque fois qu'on ferme un terminal sans sauvegarde.
+//on termine par un "-" afin de pouvoir compléter les noms par les différents outils de compilation avec par exemple CROSS_COMPILE=/usr/bin/arm-linux-gnueabihf-gcc 
 export CROSS_COMPILE=/usr/bin/arm-linux-gnueabihf-
 export ARCH=arm
 
