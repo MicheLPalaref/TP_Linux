@@ -217,3 +217,34 @@ Le chemin vers les compilateurs est
 
 # 2.3.2 Récupéreation de la configuration actuelle du noyau
 
+Le fichier config.gz du noyau que l'on souhaite récupérer sur trouve sur le SOC à l'adresse /proc/
+
+On désire le copier sur notre VM. Puisque notre VM est cachée on ne peut pas copier depuis le SOC. Il faut donc le copier depuis la VM.
+
+
+```C
+//On commence par se positionner dans le bon dossier de la VM:
+cd linux-socfpga/ 
+
+//Puis on recopie le dossier souhaité depuis l'adresse IP de notre SOC vers le dossier de la VM où nous nous trouvons
+//scp AdresseIP_SOC: Chemin_Dossier_Souhaité .
+scp root@192.168.88.24:/proc.config.gz .
+
+//Après avoir récupérer notre fichier config.gz, on applique la commande pour le dézipper:
+gunzip config.gz
+
+//Puis on rename le fichier config en config.config:
+mv config .config
+
+//Si on utilise la commande "ls" on ne trouve pas le fichier puisque les .config n'apparaissent pas. On peut en revanche s'assurer de sa présence avec la commande "ls -a"
+
+//On créé des variables d'environnement qui sont propres a notre VM qui se perdent à chaque fois qu'on ferme un terminal sans sauvegarde.
+export CROSS_COMPILE=/usr/bin/arm-linux-gnueabihf-
+export ARCH=arm
+
+//On prépare les fichiers pour le démarage noyau et on génère les scripts nécessaire au démarage du noyau
+make prepare
+make scripts
+```
+
+
