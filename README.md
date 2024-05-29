@@ -260,14 +260,13 @@ vim hello.c
 make//ne fonctionne pas car dans un dossier partagé
 cd ..//On remonte d'un cran
 cp -r Moodle_TP2/ .. //on copie tout le repertoire en dehors du dossier src. 
-cd ..
 cd Moodle_TP2/
 
 make
 
 scp hello.ko root@192.168.88.24://mise a jour du code hello.ko
 vim hello.c//affiche version du code ancienne
-cp ../src/Moodle_TP2/hello.c .//on recopie correctement
+cp ../src/Moodle_TP2/hello.c .//on recopie correctement le fichier hello.c dans le dossier actuel
 vim hello.c//affiche version du code modifié
 
 ```
