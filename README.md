@@ -191,8 +191,12 @@ En appliquant la commande Make on obtient:
 
 on applique 
 ```C
-insmod
-```
+sudo insmod hello.ko
+sudo dmesg
+![alt text](image-19.png)
 
-![alt text](image-18.png)
+sudo rmmod hello
+sudo dmesg
+![alt text](image-20.png)
+```
 
