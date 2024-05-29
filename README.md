@@ -10,7 +10,7 @@ Installation d'ORACLE VM VirtualBox:
 ![alt text](image.png)
 
 /!\ Ne pas oublier de changer le chemin d'accès pour ne pas se retrouver dans les dossiers partages de M.BARES:
-![alt text](image-1.png)
+![alt text](image-12.png)
 
 Parametrer la connection ethernet de la carte pour la lier a notre VM:
 
