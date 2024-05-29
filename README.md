@@ -126,30 +126,6 @@ Sur TeraTerm (notre carte), on vérifie la présence du nouveau code et on le la
 
 # 2.1 Accès aux registres
 
-Sur la VM:
-![alt text](image-11.png)
-
-Sur la carte:
-
-![alt text](image-10.png)
-
-
-Pose 2 problèmes:
-
-Pas de possibilité d'interruption.
-
-Pas de portabilité (l'adresse est marquée en dure. Doit rechanger le code en dur si l'adresse change. Exemple : sur un autre appareil l'adresse des GPIO peut etre differente)
-
-# 2.2 Compilation de module noyau sur la VM
-
-Installation linux-headers-amd64:
-
-![alt text](image-13.png)
-
-Installation BC:
-
-![alt text](image-14.png)
-
 On créé un chenillard en utilisant mmap:
 ```C
 #include <stdio.h>
@@ -182,5 +158,27 @@ int main (void)
 ```
 
 On met à jour le code sur la VM et on l'envoi sur le SOC:
+![alt text](image-11.png)
 
-![alt text](image-15.png)
+Sur le SOC:
+
+![alt text](image-10.png)
+
+
+Pose 2 problèmes:
+
+Pas de possibilité d'interruption.
+
+Pas de portabilité (l'adresse est marquée en dure. Doit rechanger le code en dur si l'adresse change. Exemple : sur un autre appareil l'adresse des GPIO peut etre differente)
+
+# 2.2 Compilation de module noyau sur la VM
+
+Installation linux-headers-amd64:
+
+![alt text](image-13.png)
+
+Installation BC:
+
+![alt text](image-14.png)
+
+
