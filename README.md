@@ -292,4 +292,10 @@ sudo apt install device-tree-compiler
 dtc -O dtb -o soc_system.dtb soc_system.dts
 
 ```
+Sur Teraterm on rentre les commandes:
+```C
+mkdir /root/mntboot
+mount /dev/mmcblk0p1 mntboot
+```
+puis on se place dans /root/mntboot et on renomme le fichier .dtb en .old
 
