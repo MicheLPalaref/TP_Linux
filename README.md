@@ -189,5 +189,10 @@ En appliquant la commande Make on obtient:
 
 ![alt text](image-17.png)
 
+on applique 
+```C
+insmod
+```
 
+![alt text](image-18.png)
 
