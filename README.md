@@ -59,6 +59,7 @@ le fichier hello a bien été transféré, on peut l'exécuter sur la carte avec
 ./hello
 ```
 Alors même que le fichier a été créé sur la VM:
+
 ![alt text](image-6.png)
 
 
