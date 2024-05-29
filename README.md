@@ -201,3 +201,19 @@ sudo dmesg
 ```
 ![alt text](image-20.png)
 
+# 2.3 CrossCompilation de modules noyau
+
+# 2.3.0 Récupération du Noyau Terasic (c’est déjà fait dans la VM !)
+Tout est dit dans le titre
+
+# 2.3.1 Préparation de la compilation
+
+Le chemin vers les compilateurs est
+```C
+/usr/bin/arm-linux-gnueabihf-gcc
+```
+![alt text](image-21.png)
+
+
+# 2.3.2 Récupéreation de la configuration actuelle du noyau
+
