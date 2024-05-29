@@ -193,10 +193,11 @@ on applique
 ```C
 sudo insmod hello.ko
 sudo dmesg
+```
 ![alt text](image-19.png)
-
+```C
 sudo rmmod hello
 sudo dmesg
-![alt text](image-20.png)
 ```
+![alt text](image-20.png)
 
