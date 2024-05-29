@@ -1,5 +1,8 @@
 obj-m:=hello.o
-KERNEL_SOURCE=/lib/modules/$(shell uname -r)/build
+
+CFLAGS_MODULE=-fno-pic
+
+KERNEL_SOURCE=/home/ensea/linux-socfpga
 
 all :
 	make -C $(KERNEL_SOURCE) M=$(PWD) modules

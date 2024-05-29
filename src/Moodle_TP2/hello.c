@@ -8,13 +8,13 @@
 
 int hello_init(void)
 {
-	printk(KERN_INFO "Hello world!\n");
+	printk(KERN_INFO "Ouech ouech!\n");
 	return 0;
 }
 
 void hello_exit(void)
 {
-	printk(KERN_ALERT "Bye bye...\n");
+	printk(KERN_ALERT "Ciao bye bye...\n");
 }
 
 module_init(hello_init);

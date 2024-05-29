@@ -248,4 +248,28 @@ make prepare
 make scripts
 ```
 
+# 2.3.3 Hello World
+
+On se place dans :
+```C
+cd src/Moodle_TP2/
+
+vim Makefile
+vim hello.c
+ls
+make//ne fonctionne pas car dans un dossier partagé
+cd ..//On remonte d'un cran
+cp -r Moodle_TP2/ .. //on créé un nouveau dossier 
+cd ..
+cd Moodle_TP2/
+ls
+make
+ls
+scp hello.ko root@192.168.88.24://mise a jour du code hello.ko
+vim hello.c//version affichée toujours ancienne
+cp ../src/Moodle_TP2/hello.c .//on recopie
+vim hello.c//version modifée
+
+
+```
 
