@@ -47,7 +47,7 @@ ip a
 ```
 ![alt text](image-5.png)
 
-Une fois l'IP de la carte récupérée on peut la lier à notre VM:
+Une fois l'IP de la carte récupérée on peut l'utiliser pour envoyer les programmes developpes depuis notre VM vers la carte :
 ![alt text](image-4.png)
 
 Une fois le fichier Hello transféré, si on retappe la commande "ls" on obtient:
