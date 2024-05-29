@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores
+END
+i2c_master_byte_ctrl.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/i2c_master_byte_ctrl.v
+END
+test.v
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/test.v
+END
+i2c_opencores_sw.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/i2c_opencores_sw.tcl
+END
+i2c_master_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/i2c_master_defines.v
+END
+i2c_opencores_hw.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/i2c_opencores_hw.tcl
+END
+timescale.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/timescale.v
+END
+i2c_master_bit_ctrl.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/i2c_master_bit_ctrl.v
+END
+i2c_master_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/i2c_master_top.v
+END
+i2c_opencores.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/i2c_opencores.v
+END

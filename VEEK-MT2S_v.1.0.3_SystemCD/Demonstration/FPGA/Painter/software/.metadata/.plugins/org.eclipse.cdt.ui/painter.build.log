@@ -1,0 +1,40 @@
+19:45:10 **** Incremental Build of configuration Nios II for project painter ****
+make all 
+Info: Building ../painter_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../painter_bsp/
+[BSP build complete]
+Info: Compiling gui.c to obj/default/gui.o
+nios2-elf-gcc -xc -MP -MMD -c -I../painter_bsp//HAL/inc -I../painter_bsp/ -I../painter_bsp//drivers/inc -Ifonts -Igraphic_lib -Iterasic_lib  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/gui.o gui.c
+In file included from gui.c:38:0:
+graphic_lib/simple_graphics.h:173:16: warning: inline function 'alpha_blending' declared but never defined
+ __inline__ int alpha_blending ( int horiz_offset,
+                ^
+graphic_lib/simple_graphics.h:166:16: warning: inline function 'read_from_frame' declared but never defined
+ __inline__ int read_from_frame (int horiz,
+                ^
+graphic_lib/simple_graphics.h:160:16: warning: inline function 'merge_color_channels' declared but never defined
+ __inline__ int merge_color_channels(int color_depth,
+                ^
+graphic_lib/simple_graphics.h:154:16: warning: inline function 'seperate_color_channels' declared but never defined
+ __inline__ int seperate_color_channels( int color_depth,
+                ^
+graphic_lib/simple_graphics.h:116:13: warning: inline function 'vid_put_pixel_in_span_map' declared but never defined
+ inline void vid_put_pixel_in_span_map( int x, int y, int *span_array );
+             ^
+graphic_lib/simple_graphics.h:112:12: warning: inline function 'min3' declared but never defined
+ inline int min3( int a, int b, int c );
+            ^
+graphic_lib/simple_graphics.h:110:12: warning: inline function 'max3' declared but never defined
+ inline int max3( int a, int b, int c );
+            ^
+Info: Linking painter.elf
+nios2-elf-g++  -T'../painter_bsp//linker.x' -msys-crt0='../painter_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../painter_bsp/   -Wl,-Map=painter.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o painter.elf obj/default/fonts/tahomabold_20.o obj/default/fonts/tahomabold_32.o obj/default/geometry.o obj/default/gesture.o obj/default/graphic_lib/simple_graphics.o obj/default/graphic_lib/simple_text.o obj/default/gui.o obj/default/gui_vpg.o obj/default/main.o obj/default/terasic_lib/I2C.o obj/default/terasic_lib/I2C_core.o obj/default/terasic_lib/debug.o obj/default/terasic_lib/multi_touch2.o obj/default/terasic_lib/queue.o obj/default/vip_fr.o -lm -msys-lib=m
+nios2-elf-insert painter.elf --thread_model hal --cpu_name nios2_gen2 --qsys true --simulation_enabled false --id 0 --sidp 0x8000050 --timestamp 1483695250 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name painter_qsys --quartus_project_dir "G:/svn_2016/de10-standard-dev/mtlc2-dev/painter" --jdi ../..//output_files/DE10_Standard.jdi --sopcinfo G:/svn_2016/de10-standard-dev/mtlc2-dev/painter/software/painter_bsp/../../painter_qsys.sopcinfo
+Info: (painter.elf) 510 KBytes program size (code + initialized data).
+Info:               65025 KBytes free for stack + heap.
+Info: Creating painter.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source painter.elf >painter.objdump
+[painter build complete]
+
+19:45:19 Build Finished (took 8s.688ms)
+

@@ -1,0 +1,16 @@
+19:15:08 **** Build of configuration Nios II for project vip_camera ****
+make mem_init_generate 
+Info: Building ../vip_camera_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../vip_camera_bsp/
+[BSP build complete]
+Post-processing to create mem_init/camera_qsys_onchip_memory2.hex...
+elf2hex vip_camera.elf 0x00020000 0x0003f3ff --width=32 --little-endian-mem --create-lanes=0 mem_init/camera_qsys_onchip_memory2.hex
+Post-processing to create mem_init/hdl_sim/camera_qsys_onchip_memory2.dat...
+elf2dat --infile=vip_camera.elf --outfile=mem_init/hdl_sim/camera_qsys_onchip_memory2.dat \
+		--base=0x00020000 --end=0x0003f3ff --width=32 \
+		--little-endian-mem --create-lanes=0 
+Post-processing to create mem_init/hdl_sim/camera_qsys_onchip_memory2.sym...
+nios2-elf-nm -n vip_camera.elf > mem_init/hdl_sim/camera_qsys_onchip_memory2.sym
+
+19:15:12 Build Finished (took 4s.244ms)
+

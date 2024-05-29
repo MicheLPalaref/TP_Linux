@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/HAL/src
+END
+component.mk
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/HAL/src/component.mk
+END
+i2c_opencores.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/r1/mtl2/!svn/ver/77/trunk/test/DE0_Nano_MTL2_Painter/ip/i2c_opencores/HAL/src/i2c_opencores.c
+END

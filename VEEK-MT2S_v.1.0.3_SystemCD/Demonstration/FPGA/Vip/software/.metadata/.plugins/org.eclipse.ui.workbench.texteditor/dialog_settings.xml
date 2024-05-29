@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="IMAGE_AREA_H/LIVE_IMAGE_H*LIVE_IMAGE_W/CLIPPER_MAX_W*CLIPPER_MAX_H/IMAGE_AREA_W" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="IMAGE_AREA_H*LIVE_IMAGE_W*CLIPPER_MAX_H/IMAGE_AREA_W/LIVE_IMAGE_H/CLIPPER_MAX_W"/>
+			<item value="*h1*LIVE_IMAGE_W*CLIPPER_MAX_H/w1/LIVE_IMAGE_H/CLIPPER_MAX_W"/>
+			<item value="*LIVE_IMAGE_W*CLIPPER_MAX_H/w1/LIVE_IMAGE_H/CLIPPER_MAX_W"/>
+			<item value="h1"/>
+			<item value="150"/>
+			<item value="inline"/>
+			<item value="__inline__ "/>
+		</list>
+		<list key="replacehistory">
+			<item value="IMAGE_AREA_H/LIVE_IMAGE_H*LIVE_IMAGE_W/CLIPPER_MAX_W*CLIPPER_MAX_H/IMAGE_AREA_W"/>
+			<item value="*h1/LIVE_IMAGE_H*LIVE_IMAGE_W/CLIPPER_MAX_W*CLIPPER_MAX_H/w1"/>
+			<item value="*LIVE_IMAGE_W/CLIPPER_MAX_W*CLIPPER_MAX_H/w1/LIVE_IMAGE_H"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="400" key="DIALOG_HEIGHT"/>
+		<item value="419" key="DIALOG_X_ORIGIN"/>
+		<item value="366" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

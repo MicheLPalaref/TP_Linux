@@ -273,4 +273,23 @@ vim hello.c//affiche version du code modifié
 
 # 3 Device tree (TP3)
 
+On récupère le fichier soc_system.dtc que l'on met dans notre répertoire de travail. On modifie une partie du code
+```C
+ledr: gpio@0x100003000 {
+    compatible = "altr,pio-16.1", "altr,pio-1.0";
+    reg = <0x00000001 0x00003000 0x00000010>;
+    clocks = <&clk_50>;
+
+//remplacé par:
+ledr: ensea {
+    compatible = "dev,ensea";
+    reg = <0x00000001 0x00003000 0x00000010>;
+    clocks = <&clk_50>;
+
+//Puis on met a jour l'apt et on installe le compilateur de device-tree sur la VM:
+sudo apt update
+sudo apt install device-tree-compiler
+dtc -O dtb -o soc_system.dtb soc_system.dts
+
+```
 

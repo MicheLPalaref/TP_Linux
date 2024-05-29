@@ -1,0 +1,18 @@
+15:33:59 **** Incremental Build of configuration Nios II for project vip ****
+make all 
+Info: Building ../vip_bsp/
+J:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../vip_bsp/
+[BSP build complete]
+Info: Compiling move_image.c to obj/default/move_image.o
+nios2-elf-gcc -xc -MP -MMD -c -I../vip_bsp//HAL/inc -I../vip_bsp/ -I../vip_bsp//drivers/inc -Ialt_touchscreen -Ialt_tpo_lcd -Ialt_video_display -Iaudio_tvdecoder -Ifonts -Igimp_bmp -Igraphics_lib -Imy_graphics_lib -IVIP_ctrl  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/move_image.o move_image.c
+Info: Linking vip.elf
+nios2-elf-g++  -T'../vip_bsp//linker.x' -msys-crt0='../vip_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../vip_bsp/   -Wl,-Map=vip.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o vip.elf obj/default/alt_touchscreen/I2C_core.o obj/default/alt_touchscreen/debug.o obj/default/alt_touchscreen/multi_touch2.o obj/default/alt_touchscreen/queue.o obj/default/alt_tpo_lcd/alt_tpo_lcd.o obj/default/alt_tpo_lcd/alt_tpo_lcd_console.o obj/default/alt_video_display/alt_video_display.o obj/default/audio.o obj/default/audio_tvdecoder/audio_ctrl.o obj/default/audio_tvdecoder/i2c.o obj/default/audio_tvdecoder/tvdecoder_ctrl.o obj/default/fonts/tahomabold_20.o obj/default/fonts/tahomabold_32.o obj/default/gimp_bmp/gimp_bmp.o obj/default/graphics_lib/simple_graphics.o obj/default/graphics_lib/simple_text.o obj/default/main.o obj/default/move_image.o obj/default/my_app.o obj/default/my_graphics_lib/my_text.o obj/default/VIP_ctrl/VFR_Graphics.o obj/default/VIP_ctrl/vip_wrapper_for_c_func.o -lm -msys-lib=m
+nios2-elf-insert vip.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x4001030 --timestamp 1486360670 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name DE10_Standard_Qsys --quartus_project_dir "K:/SVN/de10-standard/test/mtlc2/dee/vip" --jdi ../..//output_files/DE10_Standard.jdi --sopcinfo K:/SVN/de10-standard/test/mtlc2/dee/vip/software/vip_bsp/../../DE10_Standard_Qsys.sopcinfo
+Info: (vip.elf) 296 KBytes program size (code + initialized data).
+Info:           16073 KBytes free for stack + heap.
+Info: Creating vip.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source vip.elf >vip.objdump
+[vip build complete]
+
+15:34:01 Build Finished (took 2s.505ms)
+

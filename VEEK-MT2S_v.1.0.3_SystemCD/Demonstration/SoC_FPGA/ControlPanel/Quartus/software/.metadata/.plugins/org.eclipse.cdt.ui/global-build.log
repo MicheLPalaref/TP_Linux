@@ -1,0 +1,27 @@
+16:27:26 **** Build of configuration Nios II for project NIOS_APP ****
+make mem_init_generate 
+Info: Building ../NIOS_APP_bsp/
+D:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_APP_bsp/
+[BSP build complete]
+Post-processing to create mem_init/soc_system_onchip_memory2.hex...
+elf2hex NIOS_APP.elf 0x00020000 0x0002ffff --width=64 --little-endian-mem --create-lanes=0 mem_init/soc_system_onchip_memory2.hex
+Post-processing to create mem_init/hdl_sim/soc_system_onchip_memory2.dat...
+elf2dat --infile=NIOS_APP.elf --outfile=mem_init/hdl_sim/soc_system_onchip_memory2.dat \
+		--base=0x00020000 --end=0x0002ffff --width=64 \
+		--little-endian-mem --create-lanes=0 
+Post-processing to create mem_init/hdl_sim/soc_system_onchip_memory2.sym...
+nios2-elf-nm -n NIOS_APP.elf > mem_init/hdl_sim/soc_system_onchip_memory2.sym
+Post-processing to create mem_init/meminit.spd...
+Post-processing to create mem_init/meminit.qip...
+17:00:41 **** Build of configuration Nios II for project NIOS_APP ****
+make -j8 all 
+Info: Building ../NIOS_APP_bsp/
+D:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_APP_bsp/
+[BSP build complete]
+[NIOS_APP build complete]
+17:01:21 **** Incremental Build of configuration Nios II for project NIOS_APP ****
+make -j8 all 
+Info: Building ../NIOS_APP_bsp/
+D:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_APP_bsp/
+[BSP build complete]
+[NIOS_APP build complete]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="479" visible="1" />
+   <irq preferredWidth="34" visible="1" />
+   <enabled visible="1" />
+   <description visible="1" />
+   <inputclock visible="1" />
+   <baseaddress visible="1" />
+   <endaddress visible="1" />
+   <tags visible="1" />
+   <opcodeName visible="1" />
+   <name preferredWidth="358" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/University Program/Clock,Library/University Program/Audio &amp; Video,Library/University Program,Project,Library/University Program/Audio &amp; Video/Video,Library/University Program/Bridges,Library/University Program/Generic IO,Library/University Program/Communications,Library/University Program/Memory,Library" />
+ <window width="1616" height="876" x="-1608" y="-8" />
+ <hdlexample language="VERILOG" />
+</preferences>

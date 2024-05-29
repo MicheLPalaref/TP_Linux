@@ -1,0 +1,9 @@
+17:01:21 **** Incremental Build of configuration Nios II for project NIOS_APP ****
+make -j8 all 
+Info: Building ../NIOS_APP_bsp/
+D:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NIOS_APP_bsp/
+[BSP build complete]
+[NIOS_APP build complete]
+
+17:01:22 Build Finished (took 520ms)
+

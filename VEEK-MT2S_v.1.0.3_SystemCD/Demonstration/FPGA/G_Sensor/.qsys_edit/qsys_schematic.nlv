@@ -1,0 +1,49 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst qsys.touch_int_n -pg 1 -lvl 5 -y 1570
+preplace inst qsys.mpu_int -pg 1 -lvl 5 -y 1110
+preplace inst qsys.lcd_touch_int -pg 1 -lvl 5 -y 410
+preplace inst qsys -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst qsys.clk_50 -pg 1 -lvl 2 -y 30
+preplace inst qsys.sw -pg 1 -lvl 5 -y 810
+preplace inst qsys.led -pg 1 -lvl 5 -y 530
+preplace inst qsys.sdram -pg 1 -lvl 5 -y 1230
+preplace inst qsys.mpu_i2c_opencores -pg 1 -lvl 5 -y 1330
+preplace inst qsys.nios2_gen2.clock_bridge -pg 1
+preplace inst qsys.key -pg 1 -lvl 5 -y 290
+preplace inst qsys.jtag_uart -pg 1 -lvl 5 -y 1010
+preplace inst qsys.nios2_gen2.cpu -pg 1
+preplace inst qsys.touch_i2c_opencores -pg 1 -lvl 5 -y 1450
+preplace inst qsys.timer -pg 1 -lvl 5 -y 710
+preplace inst qsys.nios2_gen2.reset_bridge -pg 1
+preplace inst qsys.nios2_gen2 -pg 1 -lvl 2 -y 220
+preplace inst qsys.alt_vip_vfr_0 -pg 1 -lvl 1 -y 130
+preplace inst qsys.sysid -pg 1 -lvl 5 -y 630
+preplace inst qsys.pll -pg 1 -lvl 3 -y 210
+preplace inst qsys.epcs_flash_controller_0 -pg 1 -lvl 5 -y 910
+preplace inst qsys.clock_crossing_io -pg 1 -lvl 4 -y 230
+preplace inst qsys.alt_vip_itc_0 -pg 1 -lvl 5 -y 110
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)qsys.lcd_touch_int_external_connection,(SLAVE)lcd_touch_int.external_connection) 1 0 5 NJ 440 NJ 440 NJ 440 NJ 440 NJ
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)touch_i2c_opencores.export,(SLAVE)qsys.touch_i2c_opencores_export) 1 0 5 NJ 1520 NJ 1520 NJ 1520 NJ 1520 NJ
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)qsys.sw_external_connection,(SLAVE)sw.external_connection) 1 0 5 NJ 840 NJ 840 NJ 840 NJ 840 NJ
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)qsys.sdram_wire,(SLAVE)sdram.wire) 1 0 5 NJ 1300 NJ 1300 NJ 1300 NJ 1300 NJ
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)touch_int_n.external_connection,(SLAVE)qsys.touch_int_n_external_connection) 1 0 5 NJ 1600 NJ 1600 NJ 1600 NJ 1600 NJ
+preplace netloc EXPORT<net_container>qsys</net_container>(MASTER)pll.outclk1,(MASTER)qsys.pll_sdram) 1 3 3 NJ 220 NJ 220 NJ
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)qsys.mpu_int_external_connection,(SLAVE)mpu_int.external_connection) 1 0 5 NJ 1140 NJ 1140 NJ 1140 NJ 1140 NJ
+preplace netloc POINT_TO_POINT<net_container>qsys</net_container>(MASTER)clk_50.clk,(SLAVE)pll.refclk) 1 2 1 1050
+preplace netloc FAN_OUT<net_container>qsys</net_container>(SLAVE)timer.clk,(MASTER)pll.outclk2,(SLAVE)clock_crossing_io.m0_clk,(SLAVE)key.clk,(SLAVE)sw.clk,(SLAVE)led.clk,(SLAVE)sysid.clk) 1 3 2 1270 380 1500
+preplace netloc FAN_OUT<net_container>qsys</net_container>(SLAVE)touch_int_n.clk,(SLAVE)mpu_int.clk,(MASTER)pll.outclk3,(SLAVE)mpu_i2c_opencores.clock,(SLAVE)touch_i2c_opencores.clock,(SLAVE)lcd_touch_int.clk) 1 3 2 1210 420 1600
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)led.external_connection,(SLAVE)qsys.led_external_connection) 1 0 5 NJ 560 NJ 560 NJ 560 NJ 560 NJ
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)key.external_connection,(SLAVE)qsys.key_external_connection) 1 0 5 NJ 400 NJ 400 NJ 400 NJ 400 NJ
+preplace netloc POINT_TO_POINT<net_container>qsys</net_container>(MASTER)alt_vip_vfr_0.avalon_streaming_source,(SLAVE)alt_vip_itc_0.din) 1 1 4 NJ 160 NJ 160 NJ 180 1600
+preplace netloc INTERCONNECT<net_container>qsys</net_container>(SLAVE)alt_vip_vfr_0.avalon_slave,(SLAVE)epcs_flash_controller_0.epcs_control_port,(MASTER)alt_vip_vfr_0.avalon_master,(SLAVE)mpu_i2c_opencores.avalon_slave_0,(SLAVE)touch_i2c_opencores.avalon_slave_0,(SLAVE)lcd_touch_int.s1,(MASTER)nios2_gen2.instruction_master,(SLAVE)touch_int_n.s1,(SLAVE)sdram.s1,(MASTER)nios2_gen2.data_master,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)mpu_int.s1,(SLAVE)nios2_gen2.debug_mem_slave,(SLAVE)clock_crossing_io.s0) 1 0 5 230 300 590 360 1010 320 1250 460 1460
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)clk_50.clk_in,(SLAVE)qsys.clk_50_clk_in) 1 0 2 NJ 40 NJ
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)qsys.alt_vip_itc_0_clocked_video,(SLAVE)alt_vip_itc_0.clocked_video) 1 0 5 NJ 120 NJ 120 NJ 120 NJ 120 NJ
+preplace netloc INTERCONNECT<net_container>qsys</net_container>(SLAVE)sdram.reset,(SLAVE)epcs_flash_controller_0.reset,(MASTER)clk_50.clk_reset,(SLAVE)alt_vip_itc_0.is_clk_rst_reset,(SLAVE)sw.reset,(SLAVE)clock_crossing_io.m0_reset,(SLAVE)clock_crossing_io.s0_reset,(SLAVE)touch_i2c_opencores.clock_reset,(SLAVE)sysid.reset,(SLAVE)led.reset,(SLAVE)alt_vip_vfr_0.clock_master_reset,(SLAVE)alt_vip_vfr_0.clock_reset_reset,(SLAVE)jtag_uart.reset,(SLAVE)touch_int_n.reset,(SLAVE)timer.reset,(SLAVE)pll.reset,(SLAVE)nios2_gen2.reset,(SLAVE)key.reset,(MASTER)nios2_gen2.debug_reset_request,(SLAVE)lcd_touch_int.reset,(SLAVE)mpu_i2c_opencores.clock_reset,(SLAVE)mpu_int.reset) 1 0 5 250 320 630 100 1030 200 1290 160 1520
+preplace netloc FAN_OUT<net_container>qsys</net_container>(SLAVE)led.s1,(SLAVE)sw.s1,(SLAVE)key.s1,(SLAVE)sysid.control_slave,(MASTER)clock_crossing_io.m0,(SLAVE)timer.s1) 1 4 1 1540
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)qsys.mpu_i2c_opencores_export,(SLAVE)mpu_i2c_opencores.export) 1 0 5 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ
+preplace netloc FAN_OUT<net_container>qsys</net_container>(SLAVE)epcs_flash_controller_0.irq,(SLAVE)touch_i2c_opencores.interrupt_sender,(MASTER)nios2_gen2.irq,(SLAVE)alt_vip_vfr_0.interrupt_sender,(SLAVE)touch_int_n.irq,(SLAVE)jtag_uart.irq,(SLAVE)mpu_int.irq,(SLAVE)timer.irq,(SLAVE)mpu_i2c_opencores.interrupt_sender,(SLAVE)key.irq,(SLAVE)lcd_touch_int.irq) 1 0 5 270 380 NJ 380 990 360 NJ 360 1480
+preplace netloc EXPORT<net_container>qsys</net_container>(SLAVE)clk_50.clk_in_reset,(SLAVE)qsys.clk_50_clk_in_reset) 1 0 2 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>qsys</net_container>(SLAVE)alt_vip_vfr_0.clock_master,(SLAVE)sdram.clk,(SLAVE)alt_vip_vfr_0.clock_reset,(SLAVE)clock_crossing_io.s0_clk,(SLAVE)epcs_flash_controller_0.clk,(MASTER)pll.outclk0,(SLAVE)jtag_uart.clk,(SLAVE)nios2_gen2.clk,(SLAVE)alt_vip_itc_0.is_clk_rst) 1 0 5 290 280 610 180 NJ 180 1230 140 1580
+levelinfo -pg 1 0 200 1890
+levelinfo -hier qsys 210 320 750 1080 1340 1640 1800

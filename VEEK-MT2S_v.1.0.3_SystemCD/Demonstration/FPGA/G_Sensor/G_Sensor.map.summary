@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Jan 10 10:18:04 2017
+Quartus Prime Version : 16.1.1 Build 200 11/30/2016 SJ Standard Edition
+Revision Name : G_Sensor
+Top-level Entity Name : G_Sensor
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 5981
+Total pins : 242
+Total virtual pins : 0
+Total block memory bits : 113,520
+Total DSP Blocks : 3
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2
+Total DLLs : 0
